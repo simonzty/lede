@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: OrangePiZero
+name: PiZeroPlus
 
 on:
   push:
@@ -101,8 +101,8 @@ jobs:
           # 编译OrangePiZero固件:
           cat >> .config <<EOF
           CONFIG_TARGET_sunxi=y
-          CONFIG_TARGET_sunxi_cortexa7=y
-          CONFIG_TARGET_sunxi_cortexa7_DEVICE_xunlong_orangepi-zero=y
+          CONFIG_TARGET_sunxi_cortexa53=y
+          CONFIG_TARGET_sunxi_cortexa53_DEVICE_xunlong_orangepi-zero-plus=y
           EOF
 
           # 固件压缩:
