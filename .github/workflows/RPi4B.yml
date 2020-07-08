@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: PiZeroPlus
+name: RPi4B
 
 on:
   push:
